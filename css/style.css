@@ -15,7 +15,10 @@ a{color:var(--maroon)}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
 
-/* Header / nav */
+/* Top announcement bar (home + all pages) */
+.topbar{background:var(--maroon-dark);color:#fff;text-align:center;font-size:14px;padding:9px 16px}
+.topbar a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.topbar a:hover{color:#E9DADA}
 header.site{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
 .nav .brand img{height:52px;width:auto}
@@ -75,6 +78,26 @@ header.site{position:sticky;top:0;z-index:50;background:var(--card);border-botto
 .car-btn:hover{background:var(--maroon-dark)}
 .car-note{color:var(--muted);font-size:13.5px;text-align:center}
 .car-note strong{color:var(--maroon-dark)}
+/* Carousel controls: dots, counter, hint, caption, hero side note */
+.car-meta{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1}
+.car-dots{display:flex;gap:6px}
+.car-dots i{display:block;width:8px;height:8px;border-radius:50%;background:#D8C2C2}
+.car-dots i.on{background:var(--maroon);width:22px;border-radius:5px}
+.car-count{font-size:12.5px;font-weight:700;color:var(--maroon-dark)}
+.car-hint{font-size:12.5px;color:var(--muted)}
+.car-cap{padding:12px 16px 14px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);background:#fff;margin:0}
+.car-cap strong{color:var(--maroon-dark)}
+.hero-side{display:flex;flex-direction:column;gap:18px}
+.hero-side-note{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 14px 34px rgba(58,15,15,.10);padding:18px 22px;display:flex;flex-direction:column;gap:2px}
+.hero-side-note strong{color:var(--maroon-dark);font-size:18px}
+.hero-side-note span{color:var(--muted);font-size:14.5px}
+.hero-side-note a{font-weight:700;margin-top:6px;font-size:15px}
+/* Agency-math price chips */
+.price-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:4px 12px;border-radius:999px;margin-bottom:10px}
+.price-tag.their{background:#F3E2E2;color:var(--maroon-dark)}
+.price-tag.ours{background:var(--maroon);color:#fff}
 /* Standalone carousel cards + recent-work grid (home) */
 .car{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
   box-shadow:0 14px 34px rgba(58,15,15,.10);overflow:hidden}
