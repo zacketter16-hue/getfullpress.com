@@ -88,6 +88,62 @@ form.contact input,form.contact textarea{width:100%;padding:12px 14px;border:1px
 form.contact textarea{min-height:130px}
 .note{color:var(--muted);font-size:14.5px}
 
+/* Eyebrow labels & proof strip (home) */
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:var(--maroon);margin-bottom:14px}
+.eyebrow.light{color:#C9A8A8}
+.proof{display:flex;gap:0;flex-wrap:wrap;margin-top:38px;border-top:1px solid var(--line);padding-top:24px;max-width:860px}
+.proof div{flex:1 1 200px;padding-right:22px}
+.proof strong{display:block;font-size:19px;color:var(--maroon-dark)}
+.proof span{color:var(--muted);font-size:14.5px}
+
+/* Alternating feature rows with mock visuals (home) */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:38px 0;border-bottom:1px solid var(--line)}
+.feature:last-child{border-bottom:none}
+.feature .ftext h3{font-size:27px;line-height:1.25;color:var(--maroon-dark);margin-bottom:12px}
+.feature .ftext p{color:var(--muted);max-width:480px}
+.feature.flip .ftext{order:2}
+.feature.flip .mock{order:1}
+@media(max-width:860px){.feature{grid-template-columns:1fr;gap:22px}.feature.flip .ftext{order:1}.feature.flip .mock{order:2}}
+.mock{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;min-height:230px}
+.mock-post{background:var(--maroon-dark);color:#fff;border-radius:10px;padding:22px;position:relative;z-index:2}
+.mock-kicker{font-size:11.5px;letter-spacing:.16em;font-weight:700;color:#C9A8A8;text-transform:uppercase;margin-bottom:10px}
+.mock-head{font-size:23px;font-weight:700;line-height:1.3;margin-bottom:16px}
+.mock-line{height:9px;border-radius:5px;background:rgba(255,255,255,.28);margin-bottom:9px}
+.mock-panel .mock-line{background:#E4DADA}
+.mock-line.w80{width:80%}.mock-line.w70{width:70%}.mock-line.w60{width:60%}
+.mock-stack{position:absolute;inset:0;border:1px solid var(--line);border-radius:var(--radius);background:#FBF7F7}
+.mock-stack.s2{transform:translate(10px,10px);z-index:-1}
+.mock-stack.s3{transform:translate(20px,20px);z-index:-2}
+.mock-panel{position:relative;z-index:2}
+.mock-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.mock-row:last-of-type{border-bottom:none}
+.mock-row .ok{color:var(--maroon);font-weight:700;font-size:14px;white-space:nowrap}
+.mock-row strong.up{color:var(--maroon)}
+.chip{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 13px;font-weight:600;font-size:14.5px}
+.mock-gname{font-size:19px;font-weight:700;color:var(--maroon-dark)}
+.mock-geo{color:var(--muted);font-weight:400;font-size:15px}
+.mock-stars{color:var(--maroon);font-size:17px;margin:4px 0 14px}
+.mock-stars span{color:var(--muted);font-size:14px}
+.mock-note{color:var(--muted);font-size:13.5px;margin-top:14px}
+
+/* Scorecard section (home) */
+section.score{background:var(--maroon-dark);color:#fff}
+section.score h2{color:#fff;max-width:720px}
+section.score .lede{color:#E4D5D5}
+.scorecard{background:#fff;color:var(--ink);border-radius:var(--radius);padding:28px;max-width:760px}
+.sc-head{display:flex;justify-content:space-between;gap:14px;font-weight:700;color:var(--maroon-dark);border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+.sc-month{color:var(--muted);font-weight:600;font-size:14.5px}
+.sc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px}
+.sc-grid strong{display:block;font-size:30px;color:var(--maroon)}
+.sc-grid span{color:var(--muted);font-size:14px}
+.sc-note{margin-top:20px;background:var(--bg);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--grey)}
+
+/* FAQ (home) */
+.faq{max-width:820px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-bottom:12px}
+.faq summary{font-weight:700;color:var(--maroon-dark);cursor:pointer;font-size:17.5px}
+.faq details p{color:var(--muted);margin-top:10px}
+
 /* Footer */
 footer.site{background:var(--maroon-dark);color:#E9DADA;margin-top:20px}
 footer.site .inner{padding:42px 0 30px;display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start}
