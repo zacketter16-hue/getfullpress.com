@@ -45,19 +45,20 @@
           <a class="btn ghost" href="how-it-works.html">See how it works</a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="fan-post">
-          <div class="mock-kicker">Your story</div>
-          <div class="fan-head">One expert.<br>Dozens of stories.</div>
-          <div class="mock-line w80"></div>
-          <div class="mock-line w60"></div>
-          <div class="mock-line w70"></div>
+      <div class="hero-visual car" aria-label="Sample carousel created by Full Press Marketing">
+        <div class="car-track" id="carTrack">
+          <img src="images/sample-1.jpg" alt="Sample carousel slide 1 of 7: The best lawyer in your city lost a client this morning. Not to a better lawyer. To a louder one.">
+          <img src="images/sample-2.jpg" alt="Sample carousel slide 2 of 7: The morning — 9:14 AM. A business owner needs a lawyer, now. She opens her phone, and she scrolls." loading="lazy">
+          <img src="images/sample-3.jpg" alt="Sample carousel slide 3 of 7: What she found — the expert: invisible. The other firm: everywhere." loading="lazy">
+          <img src="images/sample-4.jpg" alt="Sample carousel slide 4 of 7: The decision — she didn't compare resumes. She booked the familiar name." loading="lazy">
+          <img src="images/sample-5.jpg" alt="Sample carousel slide 5 of 7: The math — six posts a month can't build familiarity." loading="lazy">
+          <img src="images/sample-6.jpg" alt="Sample carousel slide 6 of 7: The fix — one filming day. A month of being impossible to miss." loading="lazy">
+          <img src="images/sample-7.jpg" alt="Sample carousel slide 7 of 7: The takeaway — your expertise deserves more than 6 posts a month. Book a fit call at getfullpress.com." loading="lazy">
         </div>
-        <p class="fan-arrow">The algorithm matches each story to the viewer it fits</p>
-        <div class="fan-chips">
-          <div class="fan-chip"><strong>Young professionals</strong><span>see the getting-started story</span></div>
-          <div class="fan-chip"><strong>Business owners</strong><span>see the growth story</span></div>
-          <div class="fan-chip"><strong>Established clients</strong><span>see the legacy story</span></div>
+        <div class="car-ui">
+          <button type="button" class="car-btn" onclick="slideCar(-1)" aria-label="Previous slide">&#8249;</button>
+          <span class="car-note"><strong>Sample carousel</strong> — an original Full Press creation. Swipe, or use the arrows.</span>
+          <button type="button" class="car-btn" onclick="slideCar(1)" aria-label="Next slide">&#8250;</button>
         </div>
       </div>
     </div>
@@ -238,5 +239,8 @@
     </div>
   </div>
 </footer>
+<script>
+function slideCar(dir){var t=document.getElementById('carTrack');if(!t)return;var w=t.clientWidth;var i=Math.round(t.scrollLeft/w)+dir;i=Math.max(0,Math.min(6,i));t.scrollTo({left:i*w,behavior:'smooth'});}
+</script>
 </body>
 </html>
