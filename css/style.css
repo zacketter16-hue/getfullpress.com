@@ -75,6 +75,11 @@ header.site{position:sticky;top:0;z-index:50;background:var(--card);border-botto
 .car-btn:hover{background:var(--maroon-dark)}
 .car-note{color:var(--muted);font-size:13.5px;text-align:center}
 .car-note strong{color:var(--maroon-dark)}
+/* Standalone carousel cards + recent-work grid (home) */
+.car{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 14px 34px rgba(58,15,15,.10);overflow:hidden}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+@media(max-width:860px){.work-grid{grid-template-columns:1fr}}
 
 /* Sections & cards */
 section.block{padding:58px 0}
