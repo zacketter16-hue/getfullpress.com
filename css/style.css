@@ -21,7 +21,7 @@ img{max-width:100%;display:block}
 .topbar a:hover{color:#E9DADA}
 header.site{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
-.nav .brand img{height:64px;width:auto}
+.nav .brand img{height:80px;width:auto}
 .nav nav{display:flex;align-items:center;gap:26px}
 .nav nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15.5px}
 .nav nav a:hover{color:var(--maroon)}
@@ -40,7 +40,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--card);border-botto
     flex-direction:column;align-items:flex-start;padding:16px 22px;border-bottom:1px solid var(--line)}
   .nav nav.open{display:flex}
   .nav-toggle{display:block}
-  .nav .brand img{height:48px}
+  .nav .brand img{height:56px}
 }
 
 /* Hero */
