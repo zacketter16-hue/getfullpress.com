@@ -21,7 +21,7 @@ img{max-width:100%;display:block}
 .topbar a:hover{color:#E9DADA}
 header.site{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
-.nav .brand img{height:52px;width:auto}
+.nav .brand img{height:64px;width:auto}
 .nav nav{display:flex;align-items:center;gap:26px}
 .nav nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15.5px}
 .nav nav a:hover{color:var(--maroon)}
@@ -40,6 +40,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--card);border-botto
     flex-direction:column;align-items:flex-start;padding:16px 22px;border-bottom:1px solid var(--line)}
   .nav nav.open{display:flex}
   .nav-toggle{display:block}
+  .nav .brand img{height:48px}
 }
 
 /* Hero */
@@ -116,10 +117,12 @@ section.block .lede{color:var(--muted);max-width:720px;margin-bottom:30px}
 .math .card strong.big{font-size:26px;color:var(--maroon-dark);display:block;margin-bottom:6px}
 
 /* Offer strip */
-.offer{background:var(--maroon-dark);color:#fff;border-radius:var(--radius);padding:38px 34px}
+.offer{background:var(--maroon-dark);color:#fff;border-radius:var(--radius);padding:38px 34px;text-align:center}
 .offer h2{color:#fff}
-.offer p{color:#E9DADA;max-width:760px}
+.offer p{color:#E9DADA;max-width:760px;margin:0 auto}
+.offer-price{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin:10px 0 16px}
 .offer .price{font-size:34px;font-weight:700;color:#fff}
+.offer-stat{display:inline-block;border:2px solid rgba(255,255,255,.55);border-radius:999px;padding:8px 18px;font-weight:700;color:#fff;font-size:16px}
 .offer .btn{background:#fff;color:var(--maroon-dark);margin-top:18px}
 .offer .btn:hover{background:var(--bg)}
 
@@ -139,7 +142,19 @@ form.contact input,form.contact textarea{width:100%;padding:12px 14px;border:1px
 form.contact textarea{min-height:130px}
 .note{color:var(--muted);font-size:14.5px}
 
-/* Eyebrow labels & proof strip (home) */
+/* Expanded proof checklist (home) */
+.proof-list{list-style:none;margin-top:38px;border-top:1px solid var(--line);padding-top:24px;max-width:900px;
+  display:grid;grid-template-columns:1fr 1fr;gap:13px 28px}
+.proof-list li{position:relative;padding-left:30px;color:var(--muted);font-size:16px}
+.proof-list li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--maroon);font-weight:800;font-size:18px}
+.proof-list li strong{color:var(--maroon-dark)}
+@media(max-width:700px){.proof-list{grid-template-columns:1fr}}
+/* CTA band after recent work (home) */
+.cta-band{background:var(--maroon);color:#fff;border-radius:var(--radius);padding:38px 34px;text-align:center}
+.cta-band h2{color:#fff}
+.cta-band p{color:#E9DADA;max-width:640px;margin:0 auto 18px}
+.cta-band .btn{background:#fff;color:var(--maroon-dark)}
+.cta-band .btn:hover{background:var(--bg)}
 .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:var(--maroon);margin-bottom:14px}
 .eyebrow.light{color:#C9A8A8}
 .proof{display:flex;gap:0;flex-wrap:wrap;margin-top:38px;border-top:1px solid var(--line);padding-top:24px;max-width:860px}
