@@ -119,6 +119,7 @@ section.block .lede{color:var(--muted);max-width:720px;margin-bottom:30px}
 /* Offer strip */
 .offer{background:var(--maroon-dark);color:#fff;border-radius:var(--radius);padding:38px 34px;text-align:center}
 .offer h2{color:#fff}
+.offer-theme{color:#fff;font-size:20px;font-weight:700;letter-spacing:.01em;margin-bottom:4px}
 .offer p{color:#E9DADA;max-width:760px;margin:0 auto}
 .offer-price{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin:10px 0 16px}
 .offer .price{font-size:34px;font-weight:700;color:#fff}
@@ -151,7 +152,7 @@ form.contact textarea{min-height:130px}
 @media(max-width:700px){.proof-list{grid-template-columns:1fr}}
 /* CTA band after recent work (home) */
 .cta-band{background:var(--maroon);color:#fff;border-radius:var(--radius);padding:38px 34px;text-align:center}
-.cta-band h2{color:#fff}
+.cta-band h2,section.block .cta-band h2{color:#fff}
 .cta-band p{color:#E9DADA;max-width:640px;margin:0 auto 18px}
 .cta-band .btn{background:#fff;color:var(--maroon-dark)}
 .cta-band .btn:hover{background:var(--bg)}
