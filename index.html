@@ -56,9 +56,9 @@
           <img src="images/sample-7.jpg" alt="Sample carousel slide 7 of 7: The takeaway — your expertise deserves more than 6 posts a month. Book a fit call at getfullpress.com." loading="lazy">
         </div>
         <div class="car-ui">
-          <button type="button" class="car-btn" onclick="slideCar(-1)" aria-label="Previous slide">&#8249;</button>
-          <span class="car-note"><strong>Sample carousel</strong> — an original Full Press creation. Swipe, or use the arrows.</span>
-          <button type="button" class="car-btn" onclick="slideCar(1)" aria-label="Next slide">&#8250;</button>
+          <button type="button" class="car-btn" onclick="slideCar('carTrack',-1)" aria-label="Previous slide">&#8249;</button>
+          <span class="car-note"><strong>Sample carousel</strong> — one example, written for a law firm. Yours would be written for your market.</span>
+          <button type="button" class="car-btn" onclick="slideCar('carTrack',1)" aria-label="Next slide">&#8250;</button>
         </div>
       </div>
     </div>
@@ -79,6 +79,49 @@
       <div class="card"><strong class="big">~$10,500/mo</strong><p>What a traditional agency charges in services for as little as 3 static posts and 3 short videos a month &mdash; plus your ad spend on top.</p></div>
       <div class="card"><strong class="big">6 posts</strong><p>A month of &ldquo;presence&rdquo; that the platforms bury. Your expertise, reduced to a rounding error in the feed.</p></div>
       <div class="card"><strong class="big">Daily</strong><p>The cadence that actually builds authority in your market. That&rsquo;s the gap Full Press exists to close.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <h2>Recent work</h2>
+    <p class="lede">Real carousels for a real client &mdash; Inner Circle Legal Planning, an estate planning firm in Connecticut, and the first firm we built for. The same engine runs for any business where trust wins clients: financial advisors, realtors, consultants, executive-led firms. The stories change; the system doesn&rsquo;t.</p>
+    <div class="work-grid">
+      <div class="car">
+        <div class="car-track" id="carLinda">
+          <img src="images/linda-1.jpg" alt="Client carousel 'Linda', slide 1 of 7: Linda had a will. She thought that meant her family would skip probate." loading="lazy">
+          <img src="images/linda-2.jpg" alt="Client carousel 'Linda', slide 2 of 7: The myth — a will is the probate court's instructions." loading="lazy">
+          <img src="images/linda-3.jpg" alt="Client carousel 'Linda', slide 3 of 7: Public record — a will becomes public in probate." loading="lazy">
+          <img src="images/linda-4.jpg" alt="Client carousel 'Linda', slide 4 of 7: The Florida condo — a second probate in a second state." loading="lazy">
+          <img src="images/linda-5.jpg" alt="Client carousel 'Linda', slide 5 of 7: The executor — the brother she named had died." loading="lazy">
+          <img src="images/linda-6.jpg" alt="Client carousel 'Linda', slide 6 of 7: The wait — months of filings in two states." loading="lazy">
+          <img src="images/linda-7.jpg" alt="Client carousel 'Linda', slide 7 of 7: A will is a start. It's not the whole plan." loading="lazy">
+        </div>
+        <div class="car-ui">
+          <button type="button" class="car-btn" onclick="slideCar('carLinda',-1)" aria-label="Previous slide">&#8249;</button>
+          <span class="car-note"><strong>&ldquo;Linda&rdquo; — a story carousel.</strong> Why a will alone isn&rsquo;t a plan.</span>
+          <button type="button" class="car-btn" onclick="slideCar('carLinda',1)" aria-label="Next slide">&#8250;</button>
+        </div>
+      </div>
+      <div class="car">
+        <div class="car-track" id="carExplainer">
+          <img src="images/explainer-1.jpg" alt="Client explainer series, slide 1 of 9: Estate planning isn't just paperwork — your family feels it." loading="lazy">
+          <img src="images/explainer-2.jpg" alt="Client explainer series, slide 2 of 9: Without a plan, the state decides." loading="lazy">
+          <img src="images/explainer-3.jpg" alt="Client explainer series, slide 3 of 9: Wills." loading="lazy">
+          <img src="images/explainer-4.jpg" alt="Client explainer series, slide 4 of 9: Revocable living trusts." loading="lazy">
+          <img src="images/explainer-5.jpg" alt="Client explainer series, slide 5 of 9: Irrevocable trusts." loading="lazy">
+          <img src="images/explainer-6.jpg" alt="Client explainer series, slide 6 of 9: Business succession." loading="lazy">
+          <img src="images/explainer-7.jpg" alt="Client explainer series, slide 7 of 9: Probate support." loading="lazy">
+          <img src="images/explainer-8.jpg" alt="Client explainer series, slide 8 of 9: Meet your attorney — template slide." loading="lazy">
+          <img src="images/explainer-9.jpg" alt="Client explainer series, slide 9 of 9: The best plan is the one you finish." loading="lazy">
+        </div>
+        <div class="car-ui">
+          <button type="button" class="car-btn" onclick="slideCar('carExplainer',-1)" aria-label="Previous slide">&#8249;</button>
+          <span class="car-note"><strong>Firm explainer series.</strong> What the practice does, one idea per slide.</span>
+          <button type="button" class="car-btn" onclick="slideCar('carExplainer',1)" aria-label="Next slide">&#8250;</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -240,7 +283,7 @@
   </div>
 </footer>
 <script>
-function slideCar(dir){var t=document.getElementById('carTrack');if(!t)return;var w=t.clientWidth;var i=Math.round(t.scrollLeft/w)+dir;i=Math.max(0,Math.min(6,i));t.scrollTo({left:i*w,behavior:'smooth'});}
+function slideCar(id,dir){var t=document.getElementById(id);if(!t)return;var w=t.clientWidth;var n=t.children.length;var i=Math.round(t.scrollLeft/w)+dir;i=Math.max(0,Math.min(n-1,i));t.scrollTo({left:i*w,behavior:'smooth'});}
 </script>
 </body>
 </html>
